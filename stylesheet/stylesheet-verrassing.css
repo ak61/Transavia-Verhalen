@@ -1,0 +1,206 @@
+@font-face {
+    font-family: MarckScript;
+    src: url(../webfont/verrassingfont/MarckScript/MarckScript.ttf);
+}
+
+@font-face {
+    font-family: Cookie;
+    src: url(../webfont/verrassingfont/Cookie/Cookie-Regular.otf);
+}
+
+main {
+    margin-top: 3.5em;
+    background: #fff;
+}
+
+div > h1 {
+    padding-top: 0em;
+    margin-top: 0.5em;
+}
+
+h1, h2 {
+    font-family: 'Cookie', 'Cookie', cursive, 'Arial';
+    font-size: 4em;
+    color: #c71066;
+    font-weight: 100;
+    line-height: 1.1;
+    text-align: center;
+    cursor: default;
+    animation: rainbow 15s infinite alternate;
+}
+
+aside a {
+    font-family: 'Cookie', 'Cookie', cursive, 'Arial';
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #c71066;
+}
+
+aside a:hover {
+    color: #f4861b;
+}
+
+aside {
+    border: 1em;
+    background: #fff;
+}
+
+@keyframes rainbow {
+    0% {
+    color: #c71066;    
+  }
+    20% {
+    color: #a710c7;    
+  }
+    40% {
+    color: #1077c7;    
+  }
+    60% {
+    color: #10c76f;    
+  }
+    80% {
+    color: #f4ec1b;    
+  }
+  100% {
+    color: #f4861b;
+  }
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.cadeauverpakking {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: MarckScript;
+    width: 100%;  
+    margin: 0 auto;
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.rood {
+    color: #6e141c;
+}
+
+.blauw {
+    color: #105155;
+}
+
+.groen {
+    color: #144e0d;
+}
+
+.oranje {
+    color: #412a06;
+}
+
+@media (min-width: 27em) {
+    main {
+        background-image: url(../images/verrassing/achtergrond.jpg);
+    background-size: 100%;
+    }
+    
+    .cadeauverpakking {
+    width: 80%;
+}
+}
+
+@media (min-width: 40em) {
+    .cadeauverpakking {
+    width: 60%;
+}
+    
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+    
+    aside a {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 70em) {
+    .cadeauverpakking {
+    width: 45%;
+}
+}
+
+.cadeau-breed {
+    display: none;
+}
+
+.cadeau-midden {
+    display: none;
+}
+
+.cadeau-breder {
+    display: none;
+}
+
+.cadeau-breedst{
+    display: none;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+img:hover {
+    opacity: 0;
+}
+
+@media (min-width: 27em) {
+    .cadeau-vierkant {
+        display: none;
+    }
+    .cadeau-midden {
+    display: block;
+}
+}
+
+@media (min-width: 60em) {
+    .cadeau-midden {
+        display: none;
+    }
+    .cadeau-breed {
+    display: block;
+    transform: scale(1.1);
+}
+    p {
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 70em) {
+    .cadeau-breed {
+        display: none;
+    }
+    .cadeau-breder {
+    display: block;
+    transform: scale(1.1);
+}
+}
+
+header {
+    position: inherit;
+}

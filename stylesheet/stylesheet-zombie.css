@@ -1,0 +1,238 @@
+@font-face {
+    font-family: YouMurder;
+    src: url(../webfont/zombiefont/blambot_youmurderer-bb/youmurdererbb_reg.otf);
+}
+
+main {
+    background: rgba(0, 0, 0, 1);
+    
+}
+
+div h1 {
+    padding-top: 0;
+}
+
+h1, h2 {
+    font-family: YouMurder;
+    font-size: 5em;
+    color: #cf0000;
+    font-weight: 100;
+    line-height: 1.1;
+    text-align: center;
+    cursor: default;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+  color: #fff;
+font-family: 'Shadows Into Light', cursive;
+}
+
+aside {
+    font-family: YouMurder;
+    font-weight: 100;
+    margin-top: 3em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+aside a {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 100;
+}
+
+aside a:hover {
+    color: #cf0000;
+}
+
+.lint {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lint-1 {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+.lint-2 {
+    width: 100%;
+    display: none;
+    margin: 0 auto;
+}
+
+.zombie-tekst p {
+    line-height: 1.6;
+}
+
+.zombie-tekst {
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+    border-radius: 2em;
+    animation: face 30s infinite alternate;
+    position: relative;
+}
+
+@media (min-width: 27em) {
+    .zombie-tekst {
+    width: 80%;
+}
+    main {
+    background: url(../images/zombie/background.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+    .zombie-tekst p {
+    line-height: 1.7;
+        font-weight: 800;
+}
+    h1 {
+    font-size: 6em;
+}
+
+    h2 {
+        font-size: 4em;
+    }
+    
+    .lint {
+    display: none;
+}
+    
+    .lint-1 {
+    display: block;
+}
+    aside {
+    margin-top: 3.5em;
+}
+    
+}
+
+@media (min-width: 40em) {
+    .zombie-tekst {
+    width: 70%;
+}
+}
+
+@media (min-width: 50em) {
+    .lint-1 {
+    display: none;
+}
+    .lint-2 {
+    display: block;
+}
+    aside {
+    padding-left: 2em;
+}
+}
+
+@media (min-width: 55em) {
+    .zombie-tekst {
+    width: 45%;
+}
+}
+    .zombie-tekst p {
+    line-height: 1.9;
+}
+}
+
+@media (min-width: 65em) {
+    .zombie-tekst {
+    width: 40%;
+}
+}
+
+@keyframes face {
+    0%, 47% {
+    opacity: 1;
+  }
+    47%, 50% {
+      background: url(../images/zombie/scary-face.png) no-repeat center center;
+  }  
+    
+  50%, 100% {
+    opacity: 1;
+   }
+}
+
+.bloed{
+    width: 5em;
+}
+
+.bloed-1 {
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    right: 0;
+
+}
+
+.bloed-2 {
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    width: 7em;
+}
+
+.bloed-2-2 {
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    right: 0;
+    width: 7em;
+}
+
+.bloed-3 {
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+
+.bloed-4 {
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+}
+
+.bloed-5 {
+    position: absolute;
+    opacity: 0.9;
+    bottom: 0;
+    left: 0;
+}
+
+.bloed-6 {
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    right: 0;
+}
+
+.bloed-7 {
+    position: absolute;
+    opacity: 0.7;
+    bottom: 0;
+    right: 0;
+}
+
+.bloed-8 {
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+
+header {
+    position: inherit;
+}

@@ -1,0 +1,138 @@
+/*csslint order-alphabetical:false,outline-none:false, universal-selector:false, box-model:false, qualified-headings: false, unique-headings:false, box-sizing:false, fallback-colors:false compatible-vendor-prefixes:false*/
+
+/*
+========================================================
+    BROWSER RESET - gebaseerd op html5 doctor css reset
+     http://html5doctor.com/html-5-reset-stylesheet
+========================================================
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}
+nav ul{list-style:none}
+ul{margin-left:1.1em;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+*,*:before,*:after{box-sizing: border-box;}
+/*     EINDE BROWSER RESET */
+
+/*Verhaalblokje*/
+
+.verhaalblokje {
+    width: 90%;
+    border-radius: 2em 2em 2em 2em;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 1.5em;
+    transition: all .5s ease-in-out;*/
+}
+
+.animation {
+    animation: opslaan 1.5s linear;
+}
+
+@media (min-width: 27em) {
+    .verhaalblokje {
+    width: 45%;
+}
+}
+
+@media (min-width: 50em) {
+    .verhaalblokje {
+    width: 30%;
+}
+    .totaal-verhalen {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 70em) {
+    .totaal-verhalen {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.verhaalblokje:hover {
+    transform: scale(1.02);
+    box-shadow:0 0 1em #999;
+}
+
+
+@keyframes opslaan {
+    0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(25%, -110%) scale(0.1);
+      opacity: 0;
+  }
+}
+
+.verhaalblokje > article > h3 a:hover {
+    color: #00d66c;
+}
+
+.verhaalblokje > article > p {
+    height: 10.5em;
+    overflow: hidden;
+}
+
+.verhaalblokje > img {
+    width: 100%;
+    border-radius: 2em 2em 0 0;
+}
+
+.verhaalblokje > article {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.verhaalblokje > button {
+    font-family: NexaBold;
+    width: 100%;
+    border-radius: 0 0 2em 2em;
+    height: 3em;
+    border: none;
+    background-color: #2800a0;
+    box-shadow: inset 0 -.1875em .0625em #120145;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.verhaalblokje > button:hover {
+    background-color: #120145;
+}
+
+.verhaalblokje > button > a {
+    color: #fff;
+}
+
+.tag {
+    color: #ff3268;
+    border: 2px solid #ff3268;
+    width: 60%;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media (min-width: 27em) {
+    .tag {
+    width: 75%;
+}
+}
+
+@media (min-width: 70em) {
+    .tag {
+    width: 50%;
+}
+}
+
+.totaal-verhalen {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}

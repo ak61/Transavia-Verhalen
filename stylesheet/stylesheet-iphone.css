@@ -1,0 +1,322 @@
+@font-face {
+    font-family: VegurBold;
+    src: url(../webfont/vegur/VegurBold.otf);
+}
+
+@font-face {
+    font-family: VegurLight;
+    src: url(../webfont/vegur/VegurLight.otf);
+}
+
+@font-face {
+    font-family: VegurRegular;
+    src: url(../webfont/vegur/VegurRegular.otf);
+}
+
+
+aside {
+    margin-top: 3em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+aside a {
+    text-decoration: none;
+    color: #2f76bc;
+    font-size: 1em;
+    font-family: VegurRegular;
+}
+
+aside img {
+    width: 0.67em;
+    margin-right: 0.2em;
+}
+
+div {
+    background: #f6f6f6;
+}
+
+div h1 {
+    padding-top: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: VegurBold;
+    font-size: 1.8em;
+    text-align: center;
+    background: #f6f6f6;
+    color: #1d1d1b;
+}
+
+h2 {
+    margin-bottom:1em;
+    font-family: VegurLight;
+    font-size: 1.2em;
+    text-align: center;
+    color: #1d1d1b;
+}
+
+main, section {
+    background: #f6f6f6;
+}
+
+section img {
+    width: 100%;
+}
+
+.met-kader {
+    display: none;
+}
+
+.zonder-kader {
+    background: #fff;
+}
+
+
+
+/* code van http://codepen.io/team/css-tricks/pen/5ff94380c4edf4d0b1409504ed1f3315 */
+
+.box {
+  border: none;
+  width: 100%;
+  height: 25em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* code van: http://codepen.io/zakkain/pen/phjBC */
+
+.box::-webkit-scrollbar {
+    width: 0.2em;
+    border-radius: 1em;
+}
+ 
+.box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.box::-webkit-scrollbar-thumb {
+  background-color: #3b77bb;
+}
+
+.box img {
+  width: 100%;
+}
+
+@media (min-width: 30em) {
+
+    .zonder-kader {
+    display: none;
+}
+    main {
+        height: 100vh;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    .margin {
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    .met-kader {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}    
+    .box {
+        position: relative; 
+        top: 6.5em; 
+        left: 1.4em;
+        width: 12em;
+        height: 19em;
+    }
+    
+    
+.iphone-top {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 15em;
+}
+
+.iphone-bottom {
+    position: absolute; 
+    top: 28em; 
+    left: 0.15em;
+    width: 14.65em;
+}
+
+.iphone-right {
+    position: absolute; 
+    top: 4.5em; 
+    left: 13.23em;
+    width: 1.5em;
+}
+
+.iphone-left {
+    position: absolute; 
+    top: 4.55em; 
+    left: -0.15em;
+    width: 1.98em;
+}
+    
+    .bovenkant {
+    position: absolute; 
+    top: 4.7em; 
+    left: 1.65em;
+    width: 11.7em;
+}
+    
+    .onderkant {
+    position: absolute; 
+    top: 25.5em; 
+    left: 1.4em;
+    width: 12.1em;
+}
+    
+}
+
+
+@media (min-width: 25em) {
+    .margin {
+        width: 50%;
+    }
+}
+@media (min-width: 30em) {
+    .margin {
+        width: 45%;
+    }
+    aside a {
+        padding-left: 2em;
+    }
+    aside {
+    margin-top: 4em;
+}
+}
+
+@media (min-width: 35em) {
+    .margin {
+        width: 55%;
+    }
+    main {
+        height: 55em;
+    }
+
+    aside a {
+        font-size: 1.4em;
+    }
+
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    .box {
+        position: relative; 
+        top: 8.7em; 
+        left: 2em;
+        width: 16em;
+        height: 22em;
+    }
+    
+    .iphone-top {
+    width: 20em;
+}
+
+    .iphone-bottom {
+        top: 34em; 
+        width: 19.6em;
+    }
+
+    .iphone-right {
+        left: 17.7em;
+        width: 2em;
+    }
+
+    .iphone-left {
+        left: -0.10em;
+        width: 2.5em;
+    }
+        .bovenkant {
+        top: 6.2em; 
+        left: 1.9em;
+        width: 16.1em;
+    }
+        .onderkant {
+        top: 30.5em; 
+        left: 1.9em;
+        width: 16.1em;
+    }
+
+}
+@media (min-width: 40em) {
+    .margin {
+        width: 45%;
+    }
+}
+@media (min-width: 45em) {
+    .margin {
+        width: 40%;
+    }
+}
+
+@media (min-width: 50em) {
+    .margin {
+        width: 35%;
+    }
+}
+
+@media (min-width: 52em) {
+    .margin {
+        width: 38%;
+    }
+}
+
+@media (min-width: 55em) {
+    .margin {
+        width: 30%;
+    }
+}
+
+@media (min-width: 60em) {
+    .margin {
+        width: 32%;
+    }
+}
+
+
+@media (min-width: 65em) {
+    .margin {
+        width: 30%;
+    }
+}
+
+@media (min-width: 70em) {
+    .margin {
+        width: 25%;
+    }
+}
+
+@media (min-width: 80em) {
+    .margin {
+        width: 20%;
+    }
+}
+
+header {
+    position: inherit;
+}

@@ -1,0 +1,138 @@
+/*csslint order-alphabetical:false,outline-none:false, universal-selector:false, box-model:false, qualified-headings: false, unique-headings:false, box-sizing:false, fallback-colors:false compatible-vendor-prefixes:false*/
+
+/*
+========================================================
+    BROWSER RESET - gebaseerd op html5 doctor css reset
+     http://html5doctor.com/html-5-reset-stylesheet
+========================================================
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}
+nav ul{list-style:none}
+ul{margin-left:1.1em;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+*,*:before,*:after{box-sizing: border-box;}
+/*     EINDE BROWSER RESET */
+/*
+========================================================
+                        Header
+========================================================
+*/ 
+
+header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*box-shadow: 0 0.2em 1.8em #ccc;*/
+    background-color: #fff;
+}
+
+/*
+========================================================
+                        Nav
+========================================================
+*/
+header {
+    position: fixed;
+}
+header nav{
+    background-color: #fff;
+    border-bottom: 0.15em solid #00d66c;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 50em) {
+    header nav ul {
+    justify-content: center;
+}
+    header nav ul li:first-child {
+    margin-right: 5em;
+}
+}
+
+
+nav > ul > li:nth-of-type(1) a { 
+    background-image:url(../images/menu/home.svg);
+    transition: background-image 0.6s ease-in-out;
+}
+
+nav > ul > li:nth-of-type(1) a:hover { 
+    background-image:url(../images/menu/home-hover.svg);
+}
+
+nav > ul > li.active:nth-of-type(1) a { 
+    background-image:url(../images/menu/home-active.svg);
+}
+
+nav > ul > li:nth-of-type(2) a { 
+    background-image:url(../images/menu/profiel.svg);
+    transition: background-image 0.6s ease-in-out;
+}
+
+nav > ul > li:nth-of-type(2) a:hover { 
+    background-image:url(../images/menu/profiel-hover.svg);
+}
+
+nav > ul > li.active:nth-of-type(2) a { 
+    background-image:url(../images/menu/profiel-active.svg);
+}
+
+header nav li{
+    margin: 0.5em;
+}
+
+header nav li a{
+    color: transparent;
+    font-size: 2em;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 27em) {
+    header nav li a {
+    font-size: 2.2em;
+}
+}
+/* code van http://www.cssportal.com/css-tooltip-generator/# */ 
+nav a.lid {
+  position: relative;
+  display: inline;
+}
+
+nav a.lid span {
+  position: absolute;
+  width: 8em;
+  color: #FFF;
+  background: #00D66C;
+  height: 7em;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 2em;
+  font-size: 0.5em;
+  line-height: 1.5;
+  padding: 0.5em;
+  transition: 0.5s ease;
+  font-weight: bolder;
+}
+
+nav a.lid span:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+}
+
+nav a:hover.lid span {
+  visibility: visible;
+  opacity: 0.9;
+  top: 2.5em;
+  left: 3.5em;
+  margin-left: -4.5em;
+}
