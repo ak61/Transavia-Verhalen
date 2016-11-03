@@ -13,6 +13,9 @@
     src: url(../webfont/vegur/VegurRegular.otf);
 }
 
+header {
+    position: inherit;
+}
 
 aside {
     margin-top: 3em;
@@ -23,9 +26,10 @@ aside {
 
 aside a {
     text-decoration: none;
+    color: lightblue;
     color: #2f76bc;
     font-size: 1em;
-    font-family: VegurRegular;
+    font-family: 'VegurRegular', 'Arial';
 }
 
 aside img {
@@ -34,6 +38,7 @@ aside img {
 }
 
 div {
+    background: white;
     background: #f6f6f6;
 }
 
@@ -43,22 +48,26 @@ div h1 {
 
 h1 {
     margin-top: 0;
-    font-family: VegurBold;
+    font-family: 'VegurBold', 'Arial';
     font-size: 1.8em;
     text-align: center;
+    background: white;
     background: #f6f6f6;
+    color: black;
     color: #1d1d1b;
 }
 
 h2 {
     margin-bottom:1em;
-    font-family: VegurLight;
+    font-family: 'VegurLight', 'Arial';
     font-size: 1.2em;
     text-align: center;
+    color: black;
     color: #1d1d1b;
 }
 
 main, section {
+    background: white;
     background: #f6f6f6;
 }
 
@@ -71,10 +80,9 @@ section img {
 }
 
 .zonder-kader {
+    background: white;
     background: #fff;
 }
-
-
 
 /* code van http://codepen.io/team/css-tricks/pen/5ff94380c4edf4d0b1409504ed1f3315 */
 
@@ -90,7 +98,6 @@ section img {
 
 .box::-webkit-scrollbar {
     width: 0.2em;
-    border-radius: 1em;
 }
  
 .box::-webkit-scrollbar-track {
@@ -98,6 +105,10 @@ section img {
 }
  
 .box::-webkit-scrollbar-thumb {
+  background-color: #3b77bb;
+}
+ 
+body::-webkit-scrollbar-thumb {
   background-color: #3b77bb;
 }
 
@@ -182,10 +193,8 @@ section img {
     top: 25.5em; 
     left: 1.4em;
     width: 12.1em;
+}    
 }
-    
-}
-
 
 @media (min-width: 25em) {
     .margin {
@@ -315,8 +324,4 @@ section img {
     .margin {
         width: 20%;
     }
-}
-
-header {
-    position: inherit;
 }

@@ -37,11 +37,7 @@ aside {
 }
 }
 
-/*
-========================================================
-                        Form
-========================================================
-*/
+/* Form */
 
 form {
     margin: 0 auto;
@@ -71,11 +67,7 @@ form select:hover {
     box-shadow: inset 0 -.1875em .0625em #7f1737;
 }
 
-/*
-========================================================
-                        Button filter
-========================================================
-*/
+/* Button filter */
 
 /* http://weggeefcode.nl/ button filter */
 
@@ -144,9 +136,7 @@ aside > section {
     transform: scale(1.1);
 }
 
-/*
-De .hidden class verbergt de #content met display:none;
-*/
+/* De .hidden class verbergt de #content met display:none; */
 
 .hidden {
     display: none!important;

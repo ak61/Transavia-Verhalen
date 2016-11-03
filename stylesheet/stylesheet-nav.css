@@ -16,30 +16,26 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 *,*:before,*:after{box-sizing: border-box;}
 /*     EINDE BROWSER RESET */
-/*
-========================================================
-                        Header
-========================================================
-*/ 
+
+/* Header */
 
 header {
     left: 0;
     top: 0;
     width: 100%;
-    /*box-shadow: 0 0.2em 1.8em #ccc;*/
+    background-color: white;
     background-color: #fff;
 }
 
-/*
-========================================================
-                        Nav
-========================================================
-*/
+/* Nav */
+
 header {
     position: fixed;
 }
 header nav{
+    background-color: white;
     background-color: #fff;
+    border-bottom: 0.15em solid limegreen;
     border-bottom: 0.15em solid #00d66c;
 }
 
@@ -100,7 +96,9 @@ header nav li a{
     font-size: 2.2em;
 }
 }
+
 /* code van http://www.cssportal.com/css-tooltip-generator/# */ 
+
 nav a.lid {
   position: relative;
   display: inline;
@@ -109,7 +107,9 @@ nav a.lid {
 nav a.lid span {
   position: absolute;
   width: 8em;
-  color: #FFF;
+  color: white;
+  color: #fff;
+  background: limegreen;
   background: #00D66C;
   height: 7em;
   text-align: center;

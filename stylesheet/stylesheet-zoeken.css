@@ -17,17 +17,14 @@ input,select{vertical-align:middle}
 *,*:before,*:after{box-sizing: border-box;}
 /*     EINDE BROWSER RESET */
 
-/*
-========================================================
-                        input search
-========================================================
-*/
+/* input search */
 
 input[type=search] {
     width: 0;
     box-sizing: border-box;
     border: 2px solid #fff;
     border-radius: 4px;
+    background-color: white;
     background-color: #fff;
     background-image: url('../images/menu/search.svg');
     background-position: 5px 5px;
@@ -44,6 +41,7 @@ input[type=search]:hover {
 
 input[type=search]:focus {
     width: 100%;
+    border: 2px solid grey;
     border: 2px solid #ccc;
     background-image: url('../images/menu/search-focus.svg');
 }

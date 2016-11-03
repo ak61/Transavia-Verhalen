@@ -17,11 +17,7 @@ input,select{vertical-align:middle}
 *,*:before,*:after{box-sizing: border-box;}
 /*     EINDE BROWSER RESET */
 
-/*
-========================================================
-                        General
-========================================================
-*/
+/* General */
 
 @font-face {
     font-family: NexaBold;
@@ -38,6 +34,14 @@ body {
     background-color: white;
     background-color: #fff;
 }
+
+/* main */
+
+main {
+    background: white;
+    background: #f9f9f9;
+}
+
 
 h1, h2, h3, h4 {
     font-family: 'NexaBold', 'Arial';
@@ -91,6 +95,7 @@ a {
     padding-bottom: 1em;
     font-size: 1em;
     text-align: center;
+    background: white;
     background: #fff;
     width: 100%;
 }
@@ -108,8 +113,23 @@ div > h1 {
 }
 }
 
-/*main*/
+/* code van: http://codepen.io/zakkain/pen/phjBC */
 
-main {
-    background: #f9f9f9;
+body::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+@media (min-width: 27em) {
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+}
+
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #00d66c;
 }

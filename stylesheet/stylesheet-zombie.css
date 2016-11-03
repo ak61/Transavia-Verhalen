@@ -4,8 +4,8 @@
 }
 
 main {
+    background: black;
     background: rgba(0, 0, 0, 1);
-    
 }
 
 div h1 {
@@ -13,8 +13,9 @@ div h1 {
 }
 
 h1, h2 {
-    font-family: YouMurder;
+    font-family: 'YouMurder', 'Arial';
     font-size: 5em;
+    color: red;
     color: #cf0000;
     font-weight: 100;
     line-height: 1.1;
@@ -28,12 +29,13 @@ h2 {
 }
 
 p {
+  color: white;
   color: #fff;
-font-family: 'Shadows Into Light', cursive;
+  font-family: 'Shadows Into Light', cursive, 'Arial';
 }
 
 aside {
-    font-family: YouMurder;
+    font-family: 'YouMurder', 'Arial';
     font-weight: 100;
     margin-top: 3em;
     padding-left: 1em;
@@ -42,11 +44,13 @@ aside {
 
 aside a {
     font-size: 2em;
+    color: white;
     color: #fff;
     font-weight: 100;
 }
 
 aside a:hover {
+    color: red;
     color: #cf0000;
 }
 
@@ -74,6 +78,7 @@ aside a:hover {
 .zombie-tekst {
     width: 90%;
     margin: 0 auto;
+    background: black;
     background: rgba(0, 0, 0, 0.9);
     padding: 1em;
     border-radius: 2em;
@@ -93,14 +98,14 @@ aside a:hover {
 }
     .zombie-tekst p {
     line-height: 1.7;
-        font-weight: 800;
+    font-weight: 800;
 }
     h1 {
     font-size: 6em;
 }
 
     h2 {
-        font-size: 4em;
+    font-size: 4em;
     }
     
     .lint {
@@ -155,7 +160,7 @@ aside a:hover {
     opacity: 1;
   }
     47%, 50% {
-      background: url(../images/zombie/scary-face.png) no-repeat center center;
+    background: url(../images/zombie/scary-face.png) no-repeat center center;
   }  
     
   50%, 100% {
@@ -235,4 +240,9 @@ aside a:hover {
 
 header {
     position: inherit;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  background-color: #cf0000;
 }
